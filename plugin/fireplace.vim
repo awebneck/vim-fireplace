@@ -1225,7 +1225,7 @@ function! s:Edit(cmd, keyword) abort
 endfunction
 
 nnoremap <silent> <Plug>FireplaceDjump :<C-U>exe <SID>Edit('edit', expand('<cword>'))<CR>
-nnoremap <silent> <Plug>FireplaceDsplit :<C-U>exe <SID>Edit('split', expand('<cword>'))<CR>
+nnoremap <silent> <Plug>FireplaceDsplit :<C-U>exe <SID>Edit('vsplit', expand('<cword>'))<CR>
 nnoremap <silent> <Plug>FireplaceDtabjump :<C-U>exe <SID>Edit('tabedit', expand('<cword>'))<CR>
 
 function! s:set_up_source() abort
